@@ -1,8 +1,9 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import models.User;
+import org.checkerframework.checker.units.qual.A;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 
 public class HelperUser extends HelperBase {
     public HelperUser(WebDriver wd) {
@@ -19,7 +20,13 @@ public class HelperUser extends HelperBase {
         type(By.id("password"), password);
     }
 
-    public void submitLogin() {
+    //overloading
+    public void fillLoginForm(User user) {
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+    }
+
+    public void submit() {
         click(By.xpath("//button[@type='submit']"));
     }
 
@@ -33,8 +40,8 @@ public class HelperUser extends HelperBase {
     }
 
     public void clickOkButton() {
-        if(isElementPresent(By.xpath("//button[text()='Ok']")))
-        click(By.xpath("//button[text()='Ok']"));
+        if (isElementPresent(By.xpath("//button[text()='Ok']")))
+            click(By.xpath("//button[text()='Ok']"));
     }
 
     public boolean isLogged() {
@@ -57,4 +64,39 @@ public class HelperUser extends HelperBase {
 
         return res && !result;
     }
+
+    //*********************Registration******************
+
+    public void openRegistrationForm() {
+        click(By.xpath("//a[text()=' Sign up ']"));
+    }
+
+    public void fillRegistrationForm(User user) {
+        type(By.id("name"), user.getName());
+        type(By.id("lastName"), user.getLastName());
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+    }
+
+    public void checkPolicy() {
+        // click(By.id("terms-of-use"));
+
+        //variant 2
+        // click(By.cssSelector("label[for='terms-of-use']"));
+
+        //variant 3
+        JavascriptExecutor js = (JavascriptExecutor) wd;
+        js.executeScript("document.querySelector('#terms-of-use').click()");
+    }
+
+    public void checkPolicyXY() {
+        WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
+        Rectangle rectangle = label.getRect();
+        int w = rectangle.getWidth();
+        int xOffSet = -w / 2;
+        //Dimension size = wd.manage().window().getSize();
+        Actions actions = new Actions(wd);
+        actions.moveToElement(label, xOffSet, 0).click().release().perform();
+    }
+
 }
