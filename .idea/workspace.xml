@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="">
+    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="stole Maria's project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +200,19 @@
       <option name="presentableId" value="Default" />
       <updated>1763287088066</updated>
     </task>
+    <task id="LOCAL-00001" summary="stole Maria's project">
+      <option name="closed" value="true" />
+      <created>1764072325276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764072325276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="stole Maria's project" />
+    <option name="LAST_COMMIT_MESSAGE" value="stole Maria's project" />
   </component>
 </project>
