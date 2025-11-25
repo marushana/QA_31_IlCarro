@@ -15,6 +15,7 @@ public class RegistrationTests extends TestBase {
         if (app.getHelperUser().isLogged()) {
             app.getHelperUser().logout();
         }
+        //l
     }
 
 
