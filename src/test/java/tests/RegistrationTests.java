@@ -14,7 +14,6 @@ public class RegistrationTests extends TestBase {
     public void preCondition() {
         if (app.getHelperUser().isLogged()) {
             app.getHelperUser().logout();
-            //l
         }
     }
 
