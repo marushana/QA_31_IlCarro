@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="add nw car">
-      <change afterPath="$PROJECT_DIR$/Bugatti_Veyron_16.4_–_Frontansicht_(1),_5._April_2012,_Düsseldorf 1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="selector, filling form, add photo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +88,11 @@
     "last_opened_file_path": "C:/Users/marus/Qa31/QA_31_IlCarro"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marus\Qa31\QA_31_IlCarro" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarSuccess">
     <configuration name="AddNewCarTests.addNewCarSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -273,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764418022074</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="selector, filling form, add photo">
+      <option name="closed" value="true" />
+      <created>1764422369416</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764422369417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,6 +298,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stole Maria's project" />
     <MESSAGE value="add nw car" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nw car" />
+    <MESSAGE value="selector, filling form, add photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="selector, filling form, add photo" />
   </component>
 </project>
