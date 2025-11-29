@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="stole Maria's project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
+    <list default="true" id="7bb61d56-ca20-42a6-80ab-dfc0e2dfb2aa" name="Changes" comment="add nw car">
+      <change afterPath="$PROJECT_DIR$/Bugatti_Veyron_16.4_–_Frontansicht_(1),_5._April_2012,_Düsseldorf 1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,23 +76,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.LoginTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.loginSuccess.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LoginTests.test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Qa31_IlCarro.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RegistrationTests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marus/Qa31/QA_31_IlCarro&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.AddNewCarTests.addNewCarSuccess.executor": "Run",
+    "Gradle.LoginTests.executor": "Run",
+    "Gradle.LoginTests.loginSuccess.executor": "Run",
+    "Gradle.LoginTests.test.executor": "Run",
+    "Gradle.Qa31_IlCarro.executor": "Run",
+    "Gradle.RegistrationTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/marus/Qa31/QA_31_IlCarro"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.RegistrationTests">
+}]]></component>
+  <component name="RunManager" selected="Gradle.AddNewCarTests.addNewCarSuccess">
+    <configuration name="AddNewCarTests.addNewCarSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.AddNewCarTests.addNewCarSuccess&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,6 +216,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewCarTests.addNewCarSuccess" />
         <item itemvalue="Gradle.RegistrationTests" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.LoginTests.loginSuccess" />
@@ -242,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764086902459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add nw car">
+      <option name="closed" value="true" />
+      <created>1764418022074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764418022074</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +289,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stole Maria's project" />
-    <option name="LAST_COMMIT_MESSAGE" value="stole Maria's project" />
+    <MESSAGE value="add nw car" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nw car" />
   </component>
 </project>
