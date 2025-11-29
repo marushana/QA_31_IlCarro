@@ -105,4 +105,12 @@ public class HelperUser extends HelperBase {
         submit();
         clickOkButton();
     }
+
+    public String getWrongEmailText() {
+        return wd.findElement(By.xpath("//*[@class = 'error']/div[1]")).getText();
+    }
+
+    public String getWrongPasswordText() {
+        return wd.findElement(By.xpath("//*[@class = 'error']/div[2]")).getText();
+    }
 }
