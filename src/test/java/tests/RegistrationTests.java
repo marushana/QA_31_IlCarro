@@ -42,6 +42,38 @@ public class RegistrationTests extends TestBase {
         Assert.assertEquals(app.getHelperUser().getMessage(), "You are logged in success");
     }
 
+    public void registrationEmptyName(){
+        User user = new User()
+                .withName("")
+                .withLastName("Snow")
+                .withEmail("snow@gmail.com")
+                .withPassword("Snow12345$");
+
+        app.getHelperUser().openRegistrationForm();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().checkPolicyXY();
+        app.getHelperUser().submit();
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "Name is required");
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+
+    }
+
+    public void registrationEmptyLastName(){User user = new User()
+            .withName("Lisa")
+            .withLastName("")
+            .withEmail("snow@gmail.com")
+            .withPassword("Snow12345$");
+
+        app.getHelperUser().openRegistrationForm();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().checkPolicyXY();
+        app.getHelperUser().submit();
+        Assert.assertEquals(app.getHelperUser().getErrorText(), "Last name is required");
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+
+    }
+
+
     @Test    public void registrationWrongEmail(){
         Random random = new Random();
         int i = random.nextInt(1000);
