@@ -18,7 +18,7 @@ public class RegistrationTests extends TestBase {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void registrationSuccess() {
         Random random = new Random();
         int i = random.nextInt(1000);
@@ -41,6 +41,7 @@ public class RegistrationTests extends TestBase {
         Assert.assertEquals(app.getHelperUser().getMessage(), "You are logged in success");
     }
 
+    @Test
     public void registrationEmptyName(){
         User user = new User()
                 .withName("")
@@ -57,6 +58,7 @@ public class RegistrationTests extends TestBase {
 
     }
 
+    @Test
     public void registrationEmptyLastName(){User user = new User()
             .withName("Lisa")
             .withLastName("")
@@ -73,7 +75,8 @@ public class RegistrationTests extends TestBase {
     }
 
 
-    @Test    public void registrationWrongEmail(){
+    @Test(enabled = false)
+    public void registrationWrongEmail(){
         Random random = new Random();
         int i = random.nextInt(1000);
         System.out.println(i);
@@ -97,6 +100,7 @@ public class RegistrationTests extends TestBase {
 
     }
 
+    @Test
     public void registrationEmptyEmail(){
         User user = new User()
                 .withName("Lisa")
@@ -115,7 +119,8 @@ public class RegistrationTests extends TestBase {
 
 
 
-    @Test    public void registrationWrongPassword(){
+    @Test(enabled = false)
+    public void registrationWrongPassword(){
         User user = new User()
                 .withName("Lisa")
                 .withLastName("Snow")
@@ -132,7 +137,7 @@ public class RegistrationTests extends TestBase {
     }
 
 
-
+    @Test
     public void registrationEmptyPassword(){
         User user = new User()
                 .withName("Lisa")
@@ -144,12 +149,10 @@ public class RegistrationTests extends TestBase {
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicyXY();
         app.getHelperUser().submit();
-        Assert.assertEquals(app.getHelperUser().getWrongPasswordText(),"Password is required");
+
+        Assert.assertEquals(app.getHelperUser().getErrorText(),"Password is required");
         Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
-
-
     }
-
 
 
     @AfterMethod

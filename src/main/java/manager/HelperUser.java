@@ -89,13 +89,15 @@ public class HelperUser extends HelperBase {
     }
 
     public void checkPolicyXY() {
-        WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
-        Rectangle rectangle = label.getRect();
-        int w = rectangle.getWidth();
-        int xOffSet = -w / 2;
-        //Dimension size = wd.manage().window().getSize();
-        Actions actions = new Actions(wd);
-        actions.moveToElement(label, xOffSet, 0).click().release().perform();
+        if (!wd.findElement(By.id("terms-of-use")).isSelected()) {
+            WebElement label = wd.findElement(By.cssSelector("label[for='terms-of-use']"));
+            Rectangle rectangle = label.getRect();
+            int w = rectangle.getWidth();
+            int xOffSet = -w / 2;
+            //Dimension size = wd.manage().window().getSize();
+            Actions actions = new Actions(wd);
+            actions.moveToElement(label, xOffSet, 0).click().release().perform();
+        }
     }
 
     public void login(User user) {
